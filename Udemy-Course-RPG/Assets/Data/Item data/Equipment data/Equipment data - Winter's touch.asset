@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 241cc809ad185314b892fe20ca2fcca3, type: 3}
+  m_Name: Equipment data - Winter's touch
+  m_EditorClassIdentifier: 
+  saveId: b8683b2a522ae8d4fa34992ebbb9e8a9
+  itemPrice: 100
+  minStackSizeAtShop: 1
+  maxStackSizeAtShop: 1
+  itemRarity: 478
+  dropChance: 52.3
+  maxDropChance: 100
+  craftRecipe: []
+  itemName: winter touch
+  itemIcon: {fileID: -2084323055, guid: 50d2541f247088743a4a19690c30d763, type: 3}
+  itemType: 2
+  maxStackSize: 1
+  itemEffect: {fileID: 11400000, guid: fe9ced84df2f9494cafd3751f218e15c, type: 2}
+  modifiers:
+  - statType: 0
+    value: 250
+  - statType: 14
+    value: 20
+  - statType: 2
+    value: 14
+  - statType: 16
+    value: 35

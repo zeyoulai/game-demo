@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a989793f50576b445928299a802fea8a, type: 3}
+  m_Name: Line - Merchant bob_1
+  m_EditorClassIdentifier: 
+  dialogueGroupName: ' Merchant Bob'
+  speaker: {fileID: 11400000, guid: 94c19e507ddac5640b37507b04fe8f07, type: 2}
+  textLine:
+  - If this takes longer than a pint, I'm busy.
+  - Ah, good to see an old friend - though yer barley outta diapers. What can I get
+    ye?
+  - Joe took me tools again. I swear, I'll bury that bastard...
+  - If ye brake it, you buy it. If I break it... well, that's a tradition.
+  actionLine: 
+  actionType: 5
+  choiceLines:
+  - {fileID: 11400000, guid: 7f04fe8cbad298249b9e97e4d602592c, type: 2}
+  - {fileID: 11400000, guid: fd782f4bad75baf4e8d94ba86c40d398, type: 2}
+  - {fileID: 11400000, guid: 808d8af653b4acd4a8e195aa80a58cf9, type: 2}

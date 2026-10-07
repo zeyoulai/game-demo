@@ -1,0 +1,28 @@
+# Unity 核心缓存与生成目录（全部自动生成，无需上传）
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+UserSettings/
+Logs/
+
+# C# 编译产物
+bin/
+obj/
+*.csproj
+*.sln
+*.userprefs
+*.pidb
+*.suo
+*.cache
+
+# IDE 配置与缓存
+.vs/
+.vscode/
+.idea/
+
+# 系统临时文件
+*.log
+.DS_Store
+Thumbs.db

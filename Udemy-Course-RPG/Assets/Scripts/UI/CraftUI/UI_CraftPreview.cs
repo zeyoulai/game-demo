@@ -1,0 +1,75 @@
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class UI_CraftPreview : MonoBehaviour
+{
+
+    private Inventory_Item itemToCraft;
+    private Inventory_Storage storage;
+    private UI_CraftPreviewSlot[] craftPreviewSlots; 
+
+    [Header("Item Previw Setup")]
+    [SerializeField] private Image itemIcon;
+    [SerializeField] private TextMeshProUGUI itemName;
+    [SerializeField] private TextMeshProUGUI itemInfo;
+    [SerializeField] private TextMeshProUGUI buttonText;
+
+    public void SetupCraftPreview(Inventory_Storage storage)
+    {
+        this.storage = storage;
+
+        craftPreviewSlots = GetComponentsInChildren<UI_CraftPreviewSlot>();
+
+        foreach (var slot in craftPreviewSlots)
+        {
+            slot.gameObject.SetActive(false);
+        }
+    }
+    public void ConfirmCraft()
+    {
+        if (itemToCraft == null)
+        {
+            buttonText.text = "Pick an item.";
+            return;
+        }
+
+        if (storage.CanCraftItem(itemToCraft))
+        {
+            storage.CraftItem(itemToCraft);
+        }
+
+        UpdateCraftPreviewSlots();
+    }
+
+
+    public void UpdateCraftPreviw(ItemDataSO itemData)
+    {
+        itemToCraft = new Inventory_Item(itemData);
+
+        itemIcon.sprite = itemData.itemIcon;
+        itemName.text = itemData.itemName;
+        itemInfo.text = itemToCraft.GetItemInfo();
+
+        UpdateCraftPreviewSlots();
+ 
+    }
+
+    public void UpdateCraftPreviewSlots()
+    {
+        foreach (var slot in craftPreviewSlots)
+        {
+            slot.gameObject.SetActive(false);
+        }
+
+        for (int i = 0; i < itemToCraft.itemData.craftRecipe.Length; i++)
+        {
+            Inventory_Item requiredItem = itemToCraft.itemData.craftRecipe[i];
+            int avaliableAmount = storage.GetAvailableAmountOf(requiredItem.itemData);
+            craftPreviewSlots[i].gameObject.SetActive(true);
+            int requiredAmount = requiredItem.stackSize;
+            craftPreviewSlots[i].SetupPreviewSlot(requiredItem.itemData, avaliableAmount, requiredAmount);
+
+        }
+    }
+}

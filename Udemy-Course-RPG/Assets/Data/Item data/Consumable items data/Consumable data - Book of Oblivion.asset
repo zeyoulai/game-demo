@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70b2c1e6f241b94ebfa5a01843483d7, type: 3}
+  m_Name: Consumable data - Book of Oblivion
+  m_EditorClassIdentifier: 
+  itemPrice: 100
+  minStackSizeAtShop: 1
+  maxStackSizeAtShop: 5
+  craftRecipe: []
+  itemName: Book of Oblivion
+  itemIcon: {fileID: -1688086953, guid: 50d2541f247088743a4a19690c30d763, type: 3}
+  itemType: 4
+  maxStackSize: 1
+  itemEffect: {fileID: 11400000, guid: 7f8d0153f90c53147a6ffdb8f79afea0, type: 2}

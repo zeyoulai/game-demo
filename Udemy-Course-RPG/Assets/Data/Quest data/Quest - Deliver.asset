@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008d4a1d5a47bcd47b5012392b84918d, type: 3}
+  m_Name: Quest - Deliver
+  m_EditorClassIdentifier: 
+  questSaveId: d46039eddb384cb4f901fa3779d005bd
+  questType: 2
+  questName: Potion commotion
+  description: "Oi! I promised Martha some health potions, but I've got me hands
+    full. Be a gem and fetch 'em for me, would ye? Bring 'em to me \u2014 I'll pass
+    'em along. Be in a hurry tho, she gets cranky when I take too long with the help
+    she really needs."
+  questGoal: ' - Deliver health potion to bob'
+  questTargetId: 
+  requiredAmount: 4
+  itemToDeliver: {fileID: 11400000, guid: 7059a1cc33cb9ad4399f8224fe393af2, type: 2}
+  rewardType: 0
+  rewardItems:
+  - itemData: {fileID: 11400000, guid: efd40dd15c69ed4458d29c516764f145, type: 2}
+    stackSize: 1
+    itemEffect: {fileID: 0}
